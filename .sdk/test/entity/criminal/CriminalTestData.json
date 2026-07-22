@@ -1,0 +1,49 @@
+{
+  "existing": {
+    "criminal": {
+      "CRIMINAL00": {
+        "crime": [],
+        "date": "s51",
+        "description": "s52",
+        "id": "CRIMINAL00",
+        "location": "s54",
+        "name": "s55",
+        "rank": "s56",
+        "unit": "s57"
+      },
+      "CRIMINAL01": {
+        "crime": [],
+        "date": "sa1",
+        "description": "sa2",
+        "id": "CRIMINAL01",
+        "location": "sa4",
+        "name": "sa5",
+        "rank": "sa6",
+        "unit": "sa7"
+      },
+      "CRIMINAL02": {
+        "crime": [],
+        "date": "sf1",
+        "description": "sf2",
+        "id": "CRIMINAL02",
+        "location": "sf4",
+        "name": "sf5",
+        "rank": "sf6",
+        "unit": "sf7"
+      }
+    }
+  },
+  "new": {
+    "criminal": {
+      "criminal_ref01": {
+        "crime": [],
+        "date": "s141",
+        "description": "s142",
+        "location": "s144",
+        "name": "s145",
+        "rank": "s146",
+        "unit": "s147"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      contact: {
+        url: "https://github.com/l0v3m0n3y/pogony"
+      }
+      description: "The Pogony API provides access to the registry of officers in the Russian army who have committed various crimes against their soldiers, including assaults and extortion. It allows users to retrieve a list of known offenders along with relevant details related to their actions."
+      servers: [
+        {
+          description: "Production server"
+          url: "https://pogony.org"
+        }
+      ]
+      summary: "The Pogony API provides access to the registry of officers in the Russian army who have committed various crimes against their soldiers, including assaults and extortion."
+      title: "Pogony API"
+      version: "1.0.0"
+      website: "https://pogony.org"
+    }
+  }
+}
+

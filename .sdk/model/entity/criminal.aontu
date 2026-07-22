@@ -1,0 +1,78 @@
+# Entity: criminal
+
+main: kit: entity: criminal: {
+
+  alias: field: {}
+
+  fields: [
+    {
+      name: "crime"
+      req: false
+      type: "`$ARRAY`"
+    }
+    {
+      name: "date"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "description"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "id"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "location"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "name"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "rank"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "unit"
+      req: false
+      type: "`$STRING`"
+    }
+  ]
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "criminal"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          method: "GET"
+          orig: "/api/criminals"
+          parts: [
+            "api"
+            "criminals"
+          ]
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

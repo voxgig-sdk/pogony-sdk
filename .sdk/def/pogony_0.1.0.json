@@ -1,0 +1,119 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Pogony API",
+    "description": "The Pogony API provides access to the registry of officers in the Russian army who have committed various crimes against their soldiers, including assaults and extortion. It allows users to retrieve a list of known offenders along with relevant details related to their actions.",
+    "version": "1.0.0",
+    "contact": {
+      "url": "https://github.com/l0v3m0n3y/pogony"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://pogony.org",
+      "description": "Production server"
+    }
+  ],
+  "paths": {
+    "/api/criminals": {
+      "get": {
+        "summary": "Get Criminals List",
+        "description": "Retrieves a list of officers in the Russian army who have committed crimes against their soldiers, including assaults, extortion, and other offenses.",
+        "operationId": "getCriminalsList",
+        "responses": {
+          "200": {
+            "description": "Successful response with list of criminals",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Criminal"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Criminals"
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Criminal": {
+        "type": "object",
+        "description": "Information about an officer who has committed crimes",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the criminal record"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the officer"
+          },
+          "rank": {
+            "type": "string",
+            "description": "Military rank of the officer"
+          },
+          "unit": {
+            "type": "string",
+            "description": "Military unit or division"
+          },
+          "crimes": {
+            "type": "array",
+            "description": "List of crimes committed",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description of the crimes and incidents"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Date of the incident or when the crime was reported"
+          },
+          "location": {
+            "type": "string",
+            "description": "Location where the crimes took place"
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Error message"
+          },
+          "code": {
+            "type": "integer",
+            "description": "Error code"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Criminals",
+      "description": "Operations related to retrieving information about criminal officers"
+    }
+  ]
+}

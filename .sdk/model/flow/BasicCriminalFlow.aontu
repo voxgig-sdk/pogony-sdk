@@ -1,0 +1,22 @@
+# BasicCriminalFlow
+
+main: kit: flow: BasicCriminalFlow:
+{
+  entity: "criminal",
+  kind: "basic",
+  name: "BasicCriminalFlow",
+  step: [
+    {
+      op: "list",
+      valid: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "criminal_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicCriminalFlow"
+}
