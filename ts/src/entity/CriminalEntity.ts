@@ -37,7 +37,7 @@ class CriminalEntity extends PogonyEntityBase<Criminal> {
 
 
 
-  async list(this: any, reqmatch?: CriminalListMatch, ctrl?: Control): Promise<Criminal[]> {
+  async list(this: any, reqmatch?: CriminalListMatch, ctrl?: Control): Promise<CriminalEntity[]> {
 
     const utility = this._utility
 

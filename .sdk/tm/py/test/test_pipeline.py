@@ -16,11 +16,11 @@
 import pytest
 
 from projectname_sdk import PogonySDK
-from core.error import PogonyError
-from core.result import PogonyResult
-from core.response import PogonyResponse
-from core.spec import PogonySpec
-from feature.base_feature import PogonyBaseFeature
+from projectname_sdk.core.error import PogonyError
+from projectname_sdk.core.result import PogonyResult
+from projectname_sdk.core.response import PogonyResponse
+from projectname_sdk.core.spec import PogonySpec
+from projectname_sdk.feature.base_feature import PogonyBaseFeature
 
 
 def _client():

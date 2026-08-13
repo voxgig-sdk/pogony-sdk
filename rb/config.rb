@@ -27,7 +27,7 @@ module PogonyConfig
           "fields" => [
             {
               "active" => true,
-              "name" => "crime",
+              "name" => "crimes",
               "req" => false,
               "type" => "`$ARRAY`",
               "index$" => 0,
@@ -91,6 +91,7 @@ module PogonyConfig
                 {
                   "active" => true,
                   "args" => {},
+                  "kind" => "http",
                   "method" => "GET",
                   "orig" => "/api/criminals",
                   "parts" => [

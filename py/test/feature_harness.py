@@ -14,12 +14,12 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from config import make_config
-from features import _make_feature
-from core.control import PogonyControl
-from core.error import PogonyError
-from core.result import PogonyResult
-from core.spec import PogonySpec
+from pogony_sdk.config import make_config
+from pogony_sdk.features import _make_feature
+from pogony_sdk.core.control import PogonyControl
+from pogony_sdk.core.error import PogonyError
+from pogony_sdk.core.result import PogonyResult
+from pogony_sdk.core.spec import PogonySpec
 
 
 # True when this SDK was generated with the named feature.

@@ -6,7 +6,7 @@ main: kit: entity: criminal: {
 
   fields: [
     {
-      name: "crime"
+      name: "crimes"
       req: false
       type: "`$ARRAY`"
     }

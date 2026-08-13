@@ -38,7 +38,7 @@ try {
     // list() returns an array of Criminal records — iterate directly.
     $criminals = $client->Criminal()->list();
     foreach ($criminals as $item) {
-        echo $item["id"] . " " . $item["crime"] . "\n";
+        echo $item["id"] . " " . $item["crimes"] . "\n";
     }
 } catch (\Throwable $err) {
     echo "Error: " . $err->getMessage();
@@ -125,7 +125,8 @@ Create a mock client for unit testing — no server required:
 ```php
 $client = PogonySDK::test();
 
-// Entity ops return the bare mock record (throws on error).
+// Entity ops return the ENTITY (throws on error);
+// call data_get() for the mock record.
 $criminal = $client->Criminal()->list();
 print_r($criminal);
 ```
@@ -224,7 +225,7 @@ All entities share the same interface.
 
 ### Result shape
 
-Entity operations return the bare result data (an `array` for single-entity
+Entity operations return the ENTITY (call data_get() for the record) (an `array` for single-entity
 ops, a `list` for `list`) and throw on error. Wrap calls in
 `try`/`catch` to handle failures.
 
@@ -246,7 +247,7 @@ On error, `ok` is `false` and `$err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `crime` |  |
+| `crimes` |  |
 | `date` |  |
 | `description` |  |
 | `id` |  |
@@ -278,7 +279,7 @@ Create an instance: `$criminal = $client->Criminal();`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crime` | `array` |  |
+| `crimes` | `array` |  |
 | `date` | `string` |  |
 | `description` | `string` |  |
 | `id` | `string` |  |

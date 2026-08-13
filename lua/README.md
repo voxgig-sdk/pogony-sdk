@@ -218,9 +218,9 @@ data **directly** — there is no wrapper:
 
 Check `err` first (it is non-`nil` on failure), then use `value`:
 
-    local criminal, err = client:Criminal():load()
+    local criminal, err = client:Criminal():list()
     if err then error(err) end
-    -- criminal is the loaded record
+    -- criminal is the record list
 
 Only `direct()` returns a response envelope — a `table` with `ok`,
 `status`, `headers`, and `data` keys.
@@ -231,7 +231,7 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `crime` |  |
+| `crimes` |  |
 | `date` |  |
 | `description` |  |
 | `id` |  |
@@ -263,7 +263,7 @@ Create an instance: `local criminal = client:Criminal(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crime` | `table` |  |
+| `crimes` | `table` |  |
 | `date` | `string` |  |
 | `description` | `string` |  |
 | `id` | `string` |  |

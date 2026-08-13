@@ -7,7 +7,7 @@
 -- edit by hand.
 
 ---@class Criminal
----@field crime? table
+---@field crimes? table
 ---@field date? string
 ---@field description? string
 ---@field id? string
@@ -17,7 +17,7 @@
 ---@field unit? string
 
 ---@class CriminalListMatch
----@field crime? table
+---@field crimes? table
 ---@field date? string
 ---@field description? string
 ---@field id? string

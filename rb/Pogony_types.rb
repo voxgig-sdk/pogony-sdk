@@ -10,7 +10,7 @@
 
 # Criminal entity data model.
 #
-# @!attribute [rw] crime
+# @!attribute [rw] crimes
 #   @return [Array, nil]
 #
 # @!attribute [rw] date
@@ -34,7 +34,7 @@
 # @!attribute [rw] unit
 #   @return [String, nil]
 Criminal = Struct.new(
-  :crime,
+  :crimes,
   :date,
   :description,
   :id,
@@ -47,7 +47,7 @@ Criminal = Struct.new(
 
 # Request payload for Criminal#list.
 #
-# @!attribute [rw] crime
+# @!attribute [rw] crimes
 #   @return [Array, nil]
 #
 # @!attribute [rw] date
@@ -71,7 +71,7 @@ Criminal = Struct.new(
 # @!attribute [rw] unit
 #   @return [String, nil]
 CriminalListMatch = Struct.new(
-  :crime,
+  :crimes,
   :date,
   :description,
   :id,

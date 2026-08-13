@@ -92,7 +92,7 @@ $criminal = $client->Criminal();
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `crime` | `array` | No |  |
+| `crimes` | `array` | No |  |
 | `date` | `string` | No |  |
 | `description` | `string` | No |  |
 | `id` | `string` | No |  |

@@ -87,7 +87,7 @@ criminal = client.Criminal()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `crime` | `list` | No |  |
+| `crimes` | `list` | No |  |
 | `date` | `str` | No |  |
 | `description` | `str` | No |  |
 | `id` | `str` | No |  |

@@ -260,7 +260,7 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"crime"` |  |
+| `"crimes"` |  |
 | `"date"` |  |
 | `"description"` |  |
 | `"id"` |  |
@@ -292,7 +292,7 @@ Create an instance: `criminal := client.Criminal(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crime` | `[]any` |  |
+| `crimes` | `[]any` |  |
 | `date` | `string` |  |
 | `description` | `string` |  |
 | `id` | `string` |  |

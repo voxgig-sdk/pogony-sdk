@@ -21,7 +21,7 @@ class Config {
 
 
   main = {
-    name: 'ProjectName',
+    name: 'Pogony',
   }
 
 
@@ -56,7 +56,7 @@ class Config {
       "fields": [
         {
           "active": true,
-          "name": "crime",
+          "name": "crimes",
           "req": false,
           "type": "`$ARRAY`",
           "index$": 0
@@ -120,6 +120,7 @@ class Config {
             {
               "active": true,
               "args": {},
+              "kind": "http",
               "method": "GET",
               "orig": "/api/criminals",
               "parts": [

@@ -24,6 +24,7 @@ require_relative 'prepare_method'
 require_relative 'prepare_params'
 require_relative 'prepare_path'
 require_relative 'prepare_query'
+require_relative 'graphql'
 require_relative 'result_basic'
 require_relative 'result_body'
 require_relative 'result_headers'
@@ -55,6 +56,8 @@ PogonyUtility.registrar = ->(u) {
   u.prepare_params = PogonyUtilities::PrepareParams
   u.prepare_path = PogonyUtilities::PreparePath
   u.prepare_query = PogonyUtilities::PrepareQuery
+  u.graphql_body = PogonyUtilities::GraphqlBody
+  u.graphql_errors = PogonyUtilities::GraphqlErrors
   u.result_basic = PogonyUtilities::ResultBasic
   u.result_body = PogonyUtilities::ResultBody
   u.result_headers = PogonyUtilities::ResultHeaders

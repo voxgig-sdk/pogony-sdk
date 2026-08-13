@@ -6,7 +6,7 @@
 // @voxgig/apidef VALID_CANON). Do not edit by hand.
 
 export interface Criminal {
-  crime?: any[]
+  crimes?: any[]
   date?: string
   description?: string
   id?: string
@@ -17,7 +17,7 @@ export interface Criminal {
 }
 
 export interface CriminalListMatch {
-  crime?: any[]
+  crimes?: any[]
   date?: string
   description?: string
   id?: string

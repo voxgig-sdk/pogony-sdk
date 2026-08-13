@@ -63,7 +63,7 @@ describe('CriminalEntity', async () => {
     const criminal_ref01_ent = client.Criminal()
     const criminal_ref01_match: any = {}
 
-    const criminal_ref01_list = await criminal_ref01_ent.list(criminal_ref01_match)
+    const criminal_ref01_list = (await criminal_ref01_ent.list(criminal_ref01_match)).map((e: any) => e.data())
 
 
   })

@@ -3,9 +3,9 @@
 import json
 import pytest
 
-from utility.voxgig_struct import voxgig_struct as vs
+from pogony_sdk.utility.voxgig_struct import voxgig_struct as vs
 from pogony_sdk import PogonySDK
-from core import helpers
+from pogony_sdk.core import helpers
 from test import runner
 
 

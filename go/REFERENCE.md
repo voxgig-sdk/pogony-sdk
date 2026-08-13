@@ -98,7 +98,7 @@ fmt.Println(criminal.GetName()) // "criminal"
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `crime` | `[]any` | No |  |
+| `crimes` | `[]any` | No |  |
 | `date` | `string` | No |  |
 | `description` | `string` | No |  |
 | `id` | `string` | No |  |

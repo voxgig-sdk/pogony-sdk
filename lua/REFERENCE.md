@@ -90,7 +90,7 @@ local criminal = client:Criminal(nil)
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `crime` | `table` | No |  |
+| `crimes` | `table` | No |  |
 | `date` | `string` | No |  |
 | `description` | `string` | No |  |
 | `id` | `string` | No |  |

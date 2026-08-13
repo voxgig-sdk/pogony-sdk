@@ -1,4 +1,4 @@
-# ProjectName SDK exists test
+# Pogony SDK exists test
 
 import pytest
 from pogony_sdk import PogonySDK

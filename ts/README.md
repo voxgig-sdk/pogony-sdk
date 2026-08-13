@@ -35,7 +35,9 @@ const client = new PogonySDK()
 
 ### 2. List criminal records
 
-`list()` resolves to an array of Criminal objects — iterate it directly:
+`list()` resolves to an array of Criminal ENTITIES — every operation
+resolves to entities, not raw records. Iterate them directly, and call
+`.data()` on one for the record it holds:
 
 ```ts
 const criminals = await client.Criminal().list()
@@ -120,7 +122,8 @@ Create a mock client for unit testing — no server required:
 const client = PogonySDK.test()
 
 const criminal = await client.Criminal().list()
-// criminal is a bare entity populated with mock response data
+// criminal is the entity, populated with mock response data
+// — call criminal.data() for the record itself
 console.log(criminal)
 ```
 
@@ -284,7 +287,7 @@ The `prepare()` method returns:
 
 | Field | Description |
 | --- | --- |
-| `crime` |  |
+| `crimes` |  |
 | `date` |  |
 | `description` |  |
 | `id` |  |
@@ -316,7 +319,7 @@ Create an instance: `const criminal = client.Criminal()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crime` | `any[]` |  |
+| `crimes` | `any[]` |  |
 | `date` | `string` |  |
 | `description` | `string` |  |
 | `id` | `string` |  |

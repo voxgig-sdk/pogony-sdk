@@ -15,7 +15,7 @@ declare(strict_types=1);
 /** Criminal entity data model. */
 class Criminal
 {
-    public ?array $crime = null;
+    public ?array $crimes = null;
     public ?string $date = null;
     public ?string $description = null;
     public ?string $id = null;
@@ -28,7 +28,7 @@ class Criminal
 /** Request payload for Criminal#list. */
 class CriminalListMatch
 {
-    public ?array $crime = null;
+    public ?array $crimes = null;
     public ?string $date = null;
     public ?string $description = null;
     public ?string $id = null;

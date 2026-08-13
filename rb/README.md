@@ -37,7 +37,7 @@ begin
   # list returns an Array of Criminal records — iterate directly.
   criminals = client.Criminal.list
   criminals.each do |item|
-    puts "#{item["id"]} #{item["crime"]}"
+    puts "#{item["id"]} #{item["crimes"]}"
   end
 rescue => err
   warn "list failed: #{err}"
@@ -119,7 +119,8 @@ Create a mock client for unit testing — no server required:
 ```ruby
 client = PogonySDK.test
 
-# Entity ops return the bare mock record (raises on error).
+# Entity ops return the ENTITY (raises on error);
+# call data_get for the mock record.
 criminal = client.Criminal.list()
 puts criminal
 ```
@@ -236,7 +237,7 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `crime` |  |
+| `crimes` |  |
 | `date` |  |
 | `description` |  |
 | `id` |  |
@@ -268,7 +269,7 @@ Create an instance: `criminal = client.Criminal`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crime` | `Array` |  |
+| `crimes` | `Array` |  |
 | `date` | `String` |  |
 | `description` | `String` |  |
 | `id` | `String` |  |

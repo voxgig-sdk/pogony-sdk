@@ -2,7 +2,7 @@
   "existing": {
     "criminal": {
       "CRIMINAL00": {
-        "crime": [],
+        "crimes": [],
         "date": "s51",
         "description": "s52",
         "id": "CRIMINAL00",
@@ -12,7 +12,7 @@
         "unit": "s57"
       },
       "CRIMINAL01": {
-        "crime": [],
+        "crimes": [],
         "date": "sa1",
         "description": "sa2",
         "id": "CRIMINAL01",
@@ -22,7 +22,7 @@
         "unit": "sa7"
       },
       "CRIMINAL02": {
-        "crime": [],
+        "crimes": [],
         "date": "sf1",
         "description": "sf2",
         "id": "CRIMINAL02",
@@ -36,7 +36,7 @@
   "new": {
     "criminal": {
       "criminal_ref01": {
-        "crime": [],
+        "crimes": [],
         "date": "s141",
         "description": "s142",
         "location": "s144",

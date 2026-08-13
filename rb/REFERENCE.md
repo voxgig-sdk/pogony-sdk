@@ -93,7 +93,7 @@ criminal = client.Criminal
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `crime` | `Array` | No |  |
+| `crimes` | `Array` | No |  |
 | `date` | `String` | No |  |
 | `description` | `String` | No |  |
 | `id` | `String` | No |  |
