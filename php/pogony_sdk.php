@@ -40,7 +40,7 @@ class PogonySDK
         $utility = new PogonyUtility();
         $this->_utility = $utility;
 
-        $config = PogonyConfig::make_config();
+        $config = PogonyConfig::shared_config();
 
         $this->_rootctx = ($utility->make_context)([
             "client" => $this,

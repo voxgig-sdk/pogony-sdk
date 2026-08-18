@@ -28,7 +28,7 @@ class PogonySDK
     utility = PogonyUtility.new
     @_utility = utility
 
-    config = PogonyConfig.make_config
+    config = PogonyConfig.shared_config
 
     @_rootctx = utility.make_context.call({
       "client" => self,

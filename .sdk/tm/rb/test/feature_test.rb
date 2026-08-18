@@ -15,7 +15,7 @@ require_relative "../Pogony_sdk"
 module PogonyFeatureHarness
   # True when this SDK was generated with the named feature.
   def self.has_feature?(name)
-    f = PogonyConfig.make_config["feature"]
+    f = PogonyConfig.shared_config["feature"]
     f.is_a?(Hash) && !f[name].nil?
   end
 
