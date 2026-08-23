@@ -237,14 +237,14 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `crimes` |  |
-| `date` |  |
-| `description` |  |
-| `id` |  |
-| `location` |  |
-| `name` |  |
-| `rank` |  |
-| `unit` |  |
+| `crimes` | List of crimes committed |
+| `date` | Date of the incident or when the crime was reported |
+| `description` | Detailed description of the crimes and incidents |
+| `id` | Unique identifier for the criminal record |
+| `location` | Location where the crimes took place |
+| `name` | Name of the officer |
+| `rank` | Military rank of the officer |
+| `unit` | Military unit or division |
 
 Operations: List.
 
@@ -269,14 +269,14 @@ Create an instance: `criminal = client.Criminal`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crimes` | `Array` |  |
-| `date` | `String` |  |
-| `description` | `String` |  |
-| `id` | `String` |  |
-| `location` | `String` |  |
-| `name` | `String` |  |
-| `rank` | `String` |  |
-| `unit` | `String` |  |
+| `crimes` | `Array` | List of crimes committed |
+| `date` | `String` | Date of the incident or when the crime was reported |
+| `description` | `String` | Detailed description of the crimes and incidents |
+| `id` | `String` | Unique identifier for the criminal record |
+| `location` | `String` | Location where the crimes took place |
+| `name` | `String` | Name of the officer |
+| `rank` | `String` | Military rank of the officer |
+| `unit` | `String` | Military unit or division |
 
 #### Example: List
 

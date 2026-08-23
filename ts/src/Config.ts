@@ -19,9 +19,20 @@ class Config {
     return fi
   }
 
+  // False for a feature added at runtime via options.extend (station's
+  // adopt path) - the constructor uses this to skip makeFeature for names
+  // no generated class backs.
+  hasFeature(this: any, fn: string) {
+    return null != FEATURE_CLASS[fn]
+  }
+
 
   main = {
     name: 'Pogony',
+        slug: "pogony",
+    version: "0.0.1",
+    target: "ts",
+
   }
 
 
@@ -56,34 +67,42 @@ class Config {
       "fields": [
         {
           "name": "crimes",
+          "short": "List of crimes committed",
           "type": "`$ARRAY`"
         },
         {
           "name": "date",
+          "short": "Date of the incident or when the crime was reported",
           "type": "`$STRING`"
         },
         {
           "name": "description",
+          "short": "Detailed description of the crimes and incidents",
           "type": "`$STRING`"
         },
         {
           "name": "id",
+          "short": "Unique identifier for the criminal record",
           "type": "`$STRING`"
         },
         {
           "name": "location",
+          "short": "Location where the crimes took place",
           "type": "`$STRING`"
         },
         {
           "name": "name",
+          "short": "Name of the officer",
           "type": "`$STRING`"
         },
         {
           "name": "rank",
+          "short": "Military rank of the officer",
           "type": "`$STRING`"
         },
         {
           "name": "unit",
+          "short": "Military unit or division",
           "type": "`$STRING`"
         }
       ],

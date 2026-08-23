@@ -93,14 +93,14 @@ criminal = client.Criminal
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `crimes` | `Array` | No |  |
-| `date` | `String` | No |  |
-| `description` | `String` | No |  |
-| `id` | `String` | No |  |
-| `location` | `String` | No |  |
-| `name` | `String` | No |  |
-| `rank` | `String` | No |  |
-| `unit` | `String` | No |  |
+| `crimes` | `Array` | No | List of crimes committed |
+| `date` | `String` | No | Date of the incident or when the crime was reported |
+| `description` | `String` | No | Detailed description of the crimes and incidents |
+| `id` | `String` | No | Unique identifier for the criminal record |
+| `location` | `String` | No | Location where the crimes took place |
+| `name` | `String` | No | Name of the officer |
+| `rank` | `String` | No | Military rank of the officer |
+| `unit` | `String` | No | Military unit or division |
 
 ### Operations
 

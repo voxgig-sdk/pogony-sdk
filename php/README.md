@@ -247,14 +247,14 @@ On error, `ok` is `false` and `$err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `crimes` |  |
-| `date` |  |
-| `description` |  |
-| `id` |  |
-| `location` |  |
-| `name` |  |
-| `rank` |  |
-| `unit` |  |
+| `crimes` | List of crimes committed |
+| `date` | Date of the incident or when the crime was reported |
+| `description` | Detailed description of the crimes and incidents |
+| `id` | Unique identifier for the criminal record |
+| `location` | Location where the crimes took place |
+| `name` | Name of the officer |
+| `rank` | Military rank of the officer |
+| `unit` | Military unit or division |
 
 Operations: List.
 
@@ -279,14 +279,14 @@ Create an instance: `$criminal = $client->Criminal();`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crimes` | `array` |  |
-| `date` | `string` |  |
-| `description` | `string` |  |
-| `id` | `string` |  |
-| `location` | `string` |  |
-| `name` | `string` |  |
-| `rank` | `string` |  |
-| `unit` | `string` |  |
+| `crimes` | `array` | List of crimes committed |
+| `date` | `string` | Date of the incident or when the crime was reported |
+| `description` | `string` | Detailed description of the crimes and incidents |
+| `id` | `string` | Unique identifier for the criminal record |
+| `location` | `string` | Location where the crimes took place |
+| `name` | `string` | Name of the officer |
+| `rank` | `string` | Military rank of the officer |
+| `unit` | `string` | Military unit or division |
 
 #### Example: List
 

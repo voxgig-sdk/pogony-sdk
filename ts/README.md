@@ -9,7 +9,7 @@ The API is exposed as capitalised, semantic **Entities** — e.g.
 instead of raw URL paths and query parameters. This keeps the surface
 predictable and low-friction for both humans and AI agents.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go`, `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb` — see
 > the [top-level README](../README.md).
 
 
@@ -287,14 +287,14 @@ The `prepare()` method returns:
 
 | Field | Description |
 | --- | --- |
-| `crimes` |  |
-| `date` |  |
-| `description` |  |
-| `id` |  |
-| `location` |  |
-| `name` |  |
-| `rank` |  |
-| `unit` |  |
+| `crimes` | List of crimes committed |
+| `date` | Date of the incident or when the crime was reported |
+| `description` | Detailed description of the crimes and incidents |
+| `id` | Unique identifier for the criminal record |
+| `location` | Location where the crimes took place |
+| `name` | Name of the officer |
+| `rank` | Military rank of the officer |
+| `unit` | Military unit or division |
 
 Operations: list.
 
@@ -319,14 +319,14 @@ Create an instance: `const criminal = client.Criminal()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crimes` | `any[]` |  |
-| `date` | `string` |  |
-| `description` | `string` |  |
-| `id` | `string` |  |
-| `location` | `string` |  |
-| `name` | `string` |  |
-| `rank` | `string` |  |
-| `unit` | `string` |  |
+| `crimes` | `any[]` | List of crimes committed |
+| `date` | `string` | Date of the incident or when the crime was reported |
+| `description` | `string` | Detailed description of the crimes and incidents |
+| `id` | `string` | Unique identifier for the criminal record |
+| `location` | `string` | Location where the crimes took place |
+| `name` | `string` | Name of the officer |
+| `rank` | `string` | Military rank of the officer |
+| `unit` | `string` | Military unit or division |
 
 #### Example: List
 

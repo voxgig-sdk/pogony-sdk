@@ -6,7 +6,7 @@ The Golang SDK for the Pogony API — an entity-oriented client using standard G
 
 It exposes the API as capitalised, semantic **Entities** — e.g. `client.Criminal(nil)` — each with the same small set of operations (`List`) instead of raw URL paths and query strings. You call meaning, not endpoints, which keeps the cognitive load low.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb`, `ts` — see
 > the [top-level README](../README.md).
 
 
@@ -260,14 +260,14 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"crimes"` |  |
-| `"date"` |  |
-| `"description"` |  |
-| `"id"` |  |
-| `"location"` |  |
-| `"name"` |  |
-| `"rank"` |  |
-| `"unit"` |  |
+| `"crimes"` | List of crimes committed |
+| `"date"` | Date of the incident or when the crime was reported |
+| `"description"` | Detailed description of the crimes and incidents |
+| `"id"` | Unique identifier for the criminal record |
+| `"location"` | Location where the crimes took place |
+| `"name"` | Name of the officer |
+| `"rank"` | Military rank of the officer |
+| `"unit"` | Military unit or division |
 
 Operations: List.
 
@@ -292,14 +292,14 @@ Create an instance: `criminal := client.Criminal(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crimes` | `[]any` |  |
-| `date` | `string` |  |
-| `description` | `string` |  |
-| `id` | `string` |  |
-| `location` | `string` |  |
-| `name` | `string` |  |
-| `rank` | `string` |  |
-| `unit` | `string` |  |
+| `crimes` | `[]any` | List of crimes committed |
+| `date` | `string` | Date of the incident or when the crime was reported |
+| `description` | `string` | Detailed description of the crimes and incidents |
+| `id` | `string` | Unique identifier for the criminal record |
+| `location` | `string` | Location where the crimes took place |
+| `name` | `string` | Name of the officer |
+| `rank` | `string` | Military rank of the officer |
+| `unit` | `string` | Military unit or division |
 
 #### Example: List
 

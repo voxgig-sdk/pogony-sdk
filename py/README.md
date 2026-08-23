@@ -243,14 +243,14 @@ On error, `ok` is `False` and `err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `crimes` |  |
-| `date` |  |
-| `description` |  |
-| `id` |  |
-| `location` |  |
-| `name` |  |
-| `rank` |  |
-| `unit` |  |
+| `crimes` | List of crimes committed |
+| `date` | Date of the incident or when the crime was reported |
+| `description` | Detailed description of the crimes and incidents |
+| `id` | Unique identifier for the criminal record |
+| `location` | Location where the crimes took place |
+| `name` | Name of the officer |
+| `rank` | Military rank of the officer |
+| `unit` | Military unit or division |
 
 Operations: List.
 
@@ -275,14 +275,14 @@ Create an instance: `criminal = client.Criminal()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `crimes` | `list` |  |
-| `date` | `str` |  |
-| `description` | `str` |  |
-| `id` | `str` |  |
-| `location` | `str` |  |
-| `name` | `str` |  |
-| `rank` | `str` |  |
-| `unit` | `str` |  |
+| `crimes` | `list` | List of crimes committed |
+| `date` | `str` | Date of the incident or when the crime was reported |
+| `description` | `str` | Detailed description of the crimes and incidents |
+| `id` | `str` | Unique identifier for the criminal record |
+| `location` | `str` | Location where the crimes took place |
+| `name` | `str` | Name of the officer |
+| `rank` | `str` | Military rank of the officer |
+| `unit` | `str` | Military unit or division |
 
 #### Example: List
 

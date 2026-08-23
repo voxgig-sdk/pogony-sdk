@@ -36,48 +36,56 @@
               "active": true,
               "name": "crimes",
               "req": false,
+              "short": "List of crimes committed",
               "type": "`$ARRAY`"
             },
             {
               "active": true,
               "name": "date",
               "req": false,
+              "short": "Date of the incident or when the crime was reported",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "description",
               "req": false,
+              "short": "Detailed description of the crimes and incidents",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "id",
               "req": false,
+              "short": "Unique identifier for the criminal record",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "location",
               "req": false,
+              "short": "Location where the crimes took place",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "name",
               "req": false,
+              "short": "Name of the officer",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "rank",
               "req": false,
+              "short": "Military rank of the officer",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "unit",
               "req": false,
+              "short": "Military unit or division",
               "type": "`$STRING`"
             }
           ],

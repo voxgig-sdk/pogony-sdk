@@ -8,41 +8,49 @@ main: kit: entity: criminal: {
     {
       name: "crimes"
       req: false
+      short: "List of crimes committed"
       type: "`$ARRAY`"
     }
     {
       name: "date"
       req: false
+      short: "Date of the incident or when the crime was reported"
       type: "`$STRING`"
     }
     {
       name: "description"
       req: false
+      short: "Detailed description of the crimes and incidents"
       type: "`$STRING`"
     }
     {
       name: "id"
       req: false
+      short: "Unique identifier for the criminal record"
       type: "`$STRING`"
     }
     {
       name: "location"
       req: false
+      short: "Location where the crimes took place"
       type: "`$STRING`"
     }
     {
       name: "name"
       req: false
+      short: "Name of the officer"
       type: "`$STRING`"
     }
     {
       name: "rank"
       req: false
+      short: "Military rank of the officer"
       type: "`$STRING`"
     }
     {
       name: "unit"
       req: false
+      short: "Military unit or division"
       type: "`$STRING`"
     }
   ]

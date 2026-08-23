@@ -28,6 +28,9 @@ def make_config():
     return {
         "main": {
             "name": "Pogony",
+            "slug": "pogony",
+            "version": "0.0.1",
+            "target": "py",
         },
         "feature": {
             "test": {
@@ -50,34 +53,42 @@ def make_config():
         "fields": [
           {
             "name": "crimes",
+            "short": "List of crimes committed",
             "type": "`$ARRAY`",
           },
           {
             "name": "date",
+            "short": "Date of the incident or when the crime was reported",
             "type": "`$STRING`",
           },
           {
             "name": "description",
+            "short": "Detailed description of the crimes and incidents",
             "type": "`$STRING`",
           },
           {
             "name": "id",
+            "short": "Unique identifier for the criminal record",
             "type": "`$STRING`",
           },
           {
             "name": "location",
+            "short": "Location where the crimes took place",
             "type": "`$STRING`",
           },
           {
             "name": "name",
+            "short": "Name of the officer",
             "type": "`$STRING`",
           },
           {
             "name": "rank",
+            "short": "Military rank of the officer",
             "type": "`$STRING`",
           },
           {
             "name": "unit",
+            "short": "Military unit or division",
             "type": "`$STRING`",
           },
         ],

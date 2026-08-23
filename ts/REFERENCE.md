@@ -116,14 +116,14 @@ const criminal = client.Criminal()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `crimes` | `any[]` | No |  |
-| `date` | `string` | No |  |
-| `description` | `string` | No |  |
-| `id` | `string` | No |  |
-| `location` | `string` | No |  |
-| `name` | `string` | No |  |
-| `rank` | `string` | No |  |
-| `unit` | `string` | No |  |
+| `crimes` | `any[]` | No | List of crimes committed |
+| `date` | `string` | No | Date of the incident or when the crime was reported |
+| `description` | `string` | No | Detailed description of the crimes and incidents |
+| `id` | `string` | No | Unique identifier for the criminal record |
+| `location` | `string` | No | Location where the crimes took place |
+| `name` | `string` | No | Name of the officer |
+| `rank` | `string` | No | Military rank of the officer |
+| `unit` | `string` | No | Military unit or division |
 
 ### Operations
 

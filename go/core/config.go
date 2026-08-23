@@ -11,6 +11,9 @@ func MakeConfig() map[string]any {
 	return map[string]any{
 		"main": map[string]any{
 			"name": "Pogony",
+			"slug": "pogony",
+			"version": "0.0.1",
+			"target": "go",
 		},
 		"feature": map[string]any{
 			"test": map[string]any{
@@ -33,34 +36,42 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"name": "crimes",
+						"short": "List of crimes committed",
 						"type": "`$ARRAY`",
 					},
 					map[string]any{
 						"name": "date",
+						"short": "Date of the incident or when the crime was reported",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "description",
+						"short": "Detailed description of the crimes and incidents",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "id",
+						"short": "Unique identifier for the criminal record",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "location",
+						"short": "Location where the crimes took place",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "name",
+						"short": "Name of the officer",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "rank",
+						"short": "Military rank of the officer",
 						"type": "`$STRING`",
 					},
 					map[string]any{
 						"name": "unit",
+						"short": "Military unit or division",
 						"type": "`$STRING`",
 					},
 				},

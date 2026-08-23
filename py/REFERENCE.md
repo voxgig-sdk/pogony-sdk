@@ -87,14 +87,14 @@ criminal = client.Criminal()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `crimes` | `list` | No |  |
-| `date` | `str` | No |  |
-| `description` | `str` | No |  |
-| `id` | `str` | No |  |
-| `location` | `str` | No |  |
-| `name` | `str` | No |  |
-| `rank` | `str` | No |  |
-| `unit` | `str` | No |  |
+| `crimes` | `list` | No | List of crimes committed |
+| `date` | `str` | No | Date of the incident or when the crime was reported |
+| `description` | `str` | No | Detailed description of the crimes and incidents |
+| `id` | `str` | No | Unique identifier for the criminal record |
+| `location` | `str` | No | Location where the crimes took place |
+| `name` | `str` | No | Name of the officer |
+| `rank` | `str` | No | Military rank of the officer |
+| `unit` | `str` | No | Military unit or division |
 
 ### Operations
 
