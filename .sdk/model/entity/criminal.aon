@@ -12,6 +12,7 @@ main: kit: entity: criminal: {
       type: "`$ARRAY`"
     }
     {
+      format: "date"
       name: "date"
       req: false
       short: "Date of the incident or when the crime was reported"
@@ -68,9 +69,13 @@ main: kit: entity: criminal: {
         {
           method: "GET"
           orig: "/api/criminals"
-          parts: [
-            "api"
-            "criminals"
+          segments: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "criminals"
+            }
           ]
           transform: {
             req: "`reqdata`"

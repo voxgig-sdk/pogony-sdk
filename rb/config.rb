@@ -49,6 +49,7 @@ module PogonyConfig
               "type" => "`$ARRAY`",
             },
             {
+              "format" => "date",
               "name" => "date",
               "short" => "Date of the incident or when the crime was reported",
               "type" => "`$STRING`",
@@ -84,6 +85,10 @@ module PogonyConfig
               "type" => "`$STRING`",
             },
           ],
+          "id" => {
+            "field" => "id",
+            "name" => "id",
+          },
           "name" => "criminal",
           "op" => {
             "list" => {
@@ -95,15 +100,23 @@ module PogonyConfig
                   "kind" => "http",
                   "method" => "GET",
                   "orig" => "/api/criminals",
-                  "parts" => [
-                    "api",
-                    "criminals",
+                  "segments" => [
+                    {
+                      "lit" => "api",
+                    },
+                    {
+                      "lit" => "criminals",
+                    },
                   ],
                   "select" => {},
                   "transform" => {
                     "req" => "`reqdata`",
                     "res" => "`body`",
                   },
+                  "parts" => [
+                    "api",
+                    "criminals",
+                  ],
                 },
               ],
             },

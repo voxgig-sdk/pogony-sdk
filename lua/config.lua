@@ -37,6 +37,7 @@ local function make_config()
             ["type"] = "`$ARRAY`",
           },
           {
+            ["format"] = "date",
             ["name"] = "date",
             ["short"] = "Date of the incident or when the crime was reported",
             ["type"] = "`$STRING`",
@@ -72,6 +73,10 @@ local function make_config()
             ["type"] = "`$STRING`",
           },
         },
+        ["id"] = {
+          ["field"] = "id",
+          ["name"] = "id",
+        },
         ["name"] = "criminal",
         ["op"] = {
           ["list"] = {
@@ -83,14 +88,22 @@ local function make_config()
                 ["kind"] = "http",
                 ["method"] = "GET",
                 ["orig"] = "/api/criminals",
-                ["parts"] = {
-                  "api",
-                  "criminals",
+                ["segments"] = {
+                  {
+                    ["lit"] = "api",
+                  },
+                  {
+                    ["lit"] = "criminals",
+                  },
                 },
                 ["select"] = {},
                 ["transform"] = {
                   ["req"] = "`reqdata`",
                   ["res"] = "`body`",
+                },
+                ["parts"] = {
+                  "api",
+                  "criminals",
                 },
               },
             },
