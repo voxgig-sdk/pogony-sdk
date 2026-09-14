@@ -28,7 +28,7 @@ loading a specific record.
 ### 1. Create a client
 
 ```ts
-import { PogonySDK } from '@voxgig-sdk/pogony'
+import { PogonySDK } from '@voxgig-sdk/pogony-sdk'
 
 const client = new PogonySDK()
 ```
@@ -417,7 +417,7 @@ pogony/
 Import the SDK from the package root:
 
 ```ts
-import { PogonySDK } from '@voxgig-sdk/pogony'
+import { PogonySDK } from '@voxgig-sdk/pogony-sdk'
 ```
 
 ### Entity state

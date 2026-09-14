@@ -105,7 +105,7 @@ local results, err = client:Criminal():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/releases) |
+| TypeScript | `@voxgig-sdk/pogony-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/releases) |
 | Python | `voxgig-sdk-pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/releases) |
 | PHP | `voxgig-sdk/pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/releases) |
 | Golang | `github.com/voxgig-sdk/pogony-sdk/go` | `go get github.com/voxgig-sdk/pogony-sdk/go@latest` |
@@ -119,7 +119,7 @@ local results, err = client:Criminal():list()
 ### TypeScript
 
 ```ts
-import { PogonySDK } from '@voxgig-sdk/pogony'
+import { PogonySDK } from '@voxgig-sdk/pogony-sdk'
 
 const client = new PogonySDK()
 
