@@ -1,12 +1,18 @@
 # Pogony SDK feature factory
 
 from pogony_sdk.feature.base_feature import PogonyBaseFeature
+from pogony_sdk.feature.ratelimit_feature import PogonyRatelimitFeature
+from pogony_sdk.feature.retry_feature import PogonyRetryFeature
 from pogony_sdk.feature.test_feature import PogonyTestFeature
+from pogony_sdk.feature.timeout_feature import PogonyTimeoutFeature
 
 
 _FEATURES = {
     "base": lambda: PogonyBaseFeature(),
+    "ratelimit": lambda: PogonyRatelimitFeature(),
+    "retry": lambda: PogonyRetryFeature(),
     "test": lambda: PogonyTestFeature(),
+    "timeout": lambda: PogonyTimeoutFeature(),
 }
 
 

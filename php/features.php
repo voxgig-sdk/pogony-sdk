@@ -4,7 +4,10 @@ declare(strict_types=1);
 // Pogony SDK feature factory
 
 require_once __DIR__ . '/feature/BaseFeature.php';
+require_once __DIR__ . '/feature/RatelimitFeature.php';
+require_once __DIR__ . '/feature/RetryFeature.php';
 require_once __DIR__ . '/feature/TestFeature.php';
+require_once __DIR__ . '/feature/TimeoutFeature.php';
 
 
 class PogonyFeatures
@@ -14,8 +17,14 @@ class PogonyFeatures
         switch ($name) {
             case "base":
                 return new PogonyBaseFeature();
+            case "ratelimit":
+                return new PogonyRatelimitFeature();
+            case "retry":
+                return new PogonyRetryFeature();
             case "test":
                 return new PogonyTestFeature();
+            case "timeout":
+                return new PogonyTimeoutFeature();
             default:
                 return new PogonyBaseFeature();
         }
@@ -31,7 +40,10 @@ class PogonyFeatures
     {
         switch ($name) {
             case "base":
+            case "ratelimit":
+            case "retry":
             case "test":
+            case "timeout":
                 return true;
             default:
                 return false;
