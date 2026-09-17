@@ -105,12 +105,12 @@ local results, err = client:Criminal():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/pogony-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/releases) |
-| Python | `voxgig-sdk-pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/releases) |
-| PHP | `voxgig-sdk/pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/releases) |
+| TypeScript | `@voxgig-sdk/pogony-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/tags) |
+| Python | `voxgig-sdk-pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/tags) |
+| PHP | `voxgig-sdk/pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/tags) |
 | Golang | `github.com/voxgig-sdk/pogony-sdk/go` | `go get github.com/voxgig-sdk/pogony-sdk/go@latest` |
-| Ruby | `voxgig-sdk-pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/releases) |
-| Lua | `voxgig-sdk-pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/releases) |
+| Ruby | `voxgig-sdk-pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/tags) |
+| Lua | `voxgig-sdk-pogony` | publish pending — [install from git tag](https://github.com/voxgig-sdk/pogony-sdk/tags) |
 | Go CLI | `github.com/voxgig-sdk/pogony-sdk/go-cli` | `go install github.com/voxgig-sdk/pogony-sdk/go-cli/cmd/pogony@latest` |
 | Go MCP server | `github.com/voxgig-sdk/pogony-sdk/go-mcp` | `go get github.com/voxgig-sdk/pogony-sdk/go-mcp@latest` |
 
