@@ -116,44 +116,52 @@ def make_config():
         "fields": [
           {
             "name": "crimes",
-            "short": "List of crimes committed",
+            "title": "Crimes",
             "type": "`$ARRAY`",
+            "short": "List of crimes committed",
           },
           {
-            "format": "date",
             "name": "date",
-            "short": "Date of the incident or when the crime was reported",
+            "title": "Date",
             "type": "`$STRING`",
+            "short": "Date of the incident or when the crime was reported",
+            "format": "date",
           },
           {
             "name": "description",
-            "short": "Detailed description of the crimes and incidents",
+            "title": "Description",
             "type": "`$STRING`",
+            "short": "Detailed description of the crimes and incidents",
           },
           {
             "name": "id",
-            "short": "Unique identifier for the criminal record",
+            "title": "Id",
             "type": "`$STRING`",
+            "short": "Unique identifier for the criminal record",
           },
           {
             "name": "location",
-            "short": "Location where the crimes took place",
+            "title": "Location",
             "type": "`$STRING`",
+            "short": "Location where the crimes took place",
           },
           {
             "name": "name",
-            "short": "Name of the officer",
+            "title": "Name",
             "type": "`$STRING`",
+            "short": "Name of the officer",
           },
           {
             "name": "rank",
-            "short": "Military rank of the officer",
+            "title": "Rank",
             "type": "`$STRING`",
+            "short": "Military rank of the officer",
           },
           {
             "name": "unit",
-            "short": "Military unit or division",
+            "title": "Unit",
             "type": "`$STRING`",
+            "short": "Military unit or division",
           },
         ],
         "id": {
@@ -167,7 +175,6 @@ def make_config():
             "name": "list",
             "points": [
               {
-                "args": {},
                 "kind": "http",
                 "method": "GET",
                 "orig": "/api/criminals",
@@ -179,15 +186,17 @@ def make_config():
                     "lit": "criminals",
                   },
                 ],
-                "select": {},
-                "transform": {
-                  "req": "`reqdata`",
-                  "res": "`body`",
-                },
                 "parts": [
                   "api",
                   "criminals",
                 ],
+                "rename": {},
+                "transform": {
+                  "req": "`reqdata`",
+                  "res": "`body`",
+                },
+                "args": {},
+                "select": {},
               },
             ],
           },

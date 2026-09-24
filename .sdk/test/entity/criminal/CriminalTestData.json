@@ -49,86 +49,8 @@
   "requests": {
     "GET /api/criminals": {
       "provenance": "operation-contract",
-      "contract": {
-        "operationId": "getCriminalsList",
-        "parameters": [],
-        "protocol": "http",
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "items": {
-                    "description": "Information about an officer who has committed crimes",
-                    "properties": {
-                      "crimes": {
-                        "description": "List of crimes committed",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
-                      "date": {
-                        "description": "Date of the incident or when the crime was reported",
-                        "format": "date",
-                        "type": "string"
-                      },
-                      "description": {
-                        "description": "Detailed description of the crimes and incidents",
-                        "type": "string"
-                      },
-                      "id": {
-                        "description": "Unique identifier for the criminal record",
-                        "type": "string"
-                      },
-                      "location": {
-                        "description": "Location where the crimes took place",
-                        "type": "string"
-                      },
-                      "name": {
-                        "description": "Name of the officer",
-                        "type": "string"
-                      },
-                      "rank": {
-                        "description": "Military rank of the officer",
-                        "type": "string"
-                      },
-                      "unit": {
-                        "description": "Military unit or division",
-                        "type": "string"
-                      }
-                    },
-                    "type": "object"
-                  },
-                  "type": "array"
-                }
-              }
-            },
-            "description": "Successful response with list of criminals"
-          },
-          "500": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "code": {
-                      "description": "Error code",
-                      "type": "integer"
-                    },
-                    "error": {
-                      "description": "Error message",
-                      "type": "string"
-                    }
-                  },
-                  "type": "object"
-                }
-              }
-            },
-            "description": "Internal server error"
-          }
-        },
-        "securitySource": "unspecified"
-      }
+      "version": 2,
+      "source": "openapi3"
     }
   }
 }

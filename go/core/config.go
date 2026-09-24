@@ -91,44 +91,52 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"name": "crimes",
-						"short": "List of crimes committed",
+						"title": "Crimes",
 						"type": "`$ARRAY`",
+						"short": "List of crimes committed",
 					},
 					map[string]any{
-						"format": "date",
 						"name": "date",
-						"short": "Date of the incident or when the crime was reported",
+						"title": "Date",
 						"type": "`$STRING`",
+						"short": "Date of the incident or when the crime was reported",
+						"format": "date",
 					},
 					map[string]any{
 						"name": "description",
-						"short": "Detailed description of the crimes and incidents",
+						"title": "Description",
 						"type": "`$STRING`",
+						"short": "Detailed description of the crimes and incidents",
 					},
 					map[string]any{
 						"name": "id",
-						"short": "Unique identifier for the criminal record",
+						"title": "Id",
 						"type": "`$STRING`",
+						"short": "Unique identifier for the criminal record",
 					},
 					map[string]any{
 						"name": "location",
-						"short": "Location where the crimes took place",
+						"title": "Location",
 						"type": "`$STRING`",
+						"short": "Location where the crimes took place",
 					},
 					map[string]any{
 						"name": "name",
-						"short": "Name of the officer",
+						"title": "Name",
 						"type": "`$STRING`",
+						"short": "Name of the officer",
 					},
 					map[string]any{
 						"name": "rank",
-						"short": "Military rank of the officer",
+						"title": "Rank",
 						"type": "`$STRING`",
+						"short": "Military rank of the officer",
 					},
 					map[string]any{
 						"name": "unit",
-						"short": "Military unit or division",
+						"title": "Unit",
 						"type": "`$STRING`",
+						"short": "Military unit or division",
 					},
 				},
 				"id": map[string]any{
@@ -142,7 +150,6 @@ func MakeConfig() map[string]any {
 						"name": "list",
 						"points": []any{
 							map[string]any{
-								"args": map[string]any{},
 								"kind": "http",
 								"method": "GET",
 								"orig": "/api/criminals",
@@ -154,15 +161,17 @@ func MakeConfig() map[string]any {
 										"lit": "criminals",
 									},
 								},
-								"select": map[string]any{},
-								"transform": map[string]any{
-									"req": "`reqdata`",
-									"res": "`body`",
-								},
 								"parts": []any{
 									"api",
 									"criminals",
 								},
+								"rename": map[string]any{},
+								"transform": map[string]any{
+									"req": "`reqdata`",
+									"res": "`body`",
+								},
+								"args": map[string]any{},
+								"select": map[string]any{},
 							},
 						},
 					},

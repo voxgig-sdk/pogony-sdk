@@ -24,71 +24,145 @@
         "repr": "auto"
       },
       "contributor": {},
+      "doc": {
+        "active": true,
+        "assets": {
+          "path": ".sdk/doc/assets"
+        },
+        "brand": {
+          "label": "",
+          "notice": "",
+          "shortNotice": "",
+          "url": ""
+        },
+        "ci": {
+          "active": true,
+          "branch": "main"
+        },
+        "content": {
+          "path": ".sdk/doc/content"
+        },
+        "edition": {
+          "summary": {
+            "active": true,
+            "base": "node_modules/@voxgig/docgen/project/.sdk",
+            "brand": {},
+            "filter": {
+              "entities": [],
+              "features": [],
+              "targets": []
+            },
+            "kind": "summary",
+            "name": "summary",
+            "origname": "",
+            "output": {
+              "path": "SUMMARY.md"
+            },
+            "package": "@voxgig/docgen",
+            "published": false,
+            "site": {
+              "active": true
+            },
+            "style": {},
+            "title": ""
+          }
+        },
+        "qa": {
+          "vocabulary": []
+        },
+        "style": {
+          "color": {
+            "accent": "#00c6d8",
+            "background": "#f5f5f9",
+            "darkBackground": "#0f1117",
+            "darkText": "#e6edf3",
+            "primary": "#e70042",
+            "text": "#0a0a0a"
+          },
+          "font": "Nunito, system-ui, sans-serif",
+          "fontFile": "",
+          "headingFont": "Nunito, system-ui, sans-serif",
+          "headingFontFile": "",
+          "logo": "",
+          "mode": "light",
+          "mono": "ui-monospace, monospace",
+          "monoFile": ""
+        },
+        "target": {}
+      },
       "entity": {
         "criminal": {
           "active": true,
           "alias": {
             "field": {}
           },
-          "fields": [
-            {
-              "active": true,
-              "name": "crimes",
-              "req": false,
-              "short": "List of crimes committed",
-              "type": "`$ARRAY`"
+          "fields": {
+            "crimes": {
+              "a": true,
+              "h": "Crimes",
+              "n": "crimes",
+              "r": false,
+              "sh": "List of crimes committed",
+              "t": "`$ARRAY`"
             },
-            {
-              "active": true,
-              "format": "date",
-              "name": "date",
-              "req": false,
-              "short": "Date of the incident or when the crime was reported",
-              "type": "`$STRING`"
+            "date": {
+              "a": true,
+              "fo": "date",
+              "h": "Date",
+              "n": "date",
+              "r": false,
+              "sh": "Date of the incident or when the crime was reported",
+              "t": "`$STRING`"
             },
-            {
-              "active": true,
-              "name": "description",
-              "req": false,
-              "short": "Detailed description of the crimes and incidents",
-              "type": "`$STRING`"
+            "description": {
+              "a": true,
+              "h": "Description",
+              "n": "description",
+              "r": false,
+              "sh": "Detailed description of the crimes and incidents",
+              "t": "`$STRING`"
             },
-            {
-              "active": true,
-              "name": "id",
-              "req": false,
-              "short": "Unique identifier for the criminal record",
-              "type": "`$STRING`"
+            "id": {
+              "a": true,
+              "h": "Id",
+              "n": "id",
+              "r": false,
+              "sh": "Unique identifier for the criminal record",
+              "t": "`$STRING`"
             },
-            {
-              "active": true,
-              "name": "location",
-              "req": false,
-              "short": "Location where the crimes took place",
-              "type": "`$STRING`"
+            "location": {
+              "a": true,
+              "h": "Location",
+              "n": "location",
+              "r": false,
+              "sh": "Location where the crimes took place",
+              "t": "`$STRING`"
             },
-            {
-              "active": true,
-              "name": "name",
-              "req": false,
-              "short": "Name of the officer",
-              "type": "`$STRING`"
+            "name": {
+              "a": true,
+              "h": "Name",
+              "n": "name",
+              "r": false,
+              "sh": "Name of the officer",
+              "t": "`$STRING`"
             },
-            {
-              "active": true,
-              "name": "rank",
-              "req": false,
-              "short": "Military rank of the officer",
-              "type": "`$STRING`"
+            "rank": {
+              "a": true,
+              "h": "Rank",
+              "n": "rank",
+              "r": false,
+              "sh": "Military rank of the officer",
+              "t": "`$STRING`"
             },
-            {
-              "active": true,
-              "name": "unit",
-              "req": false,
-              "short": "Military unit or division",
-              "type": "`$STRING`"
+            "unit": {
+              "a": true,
+              "h": "Unit",
+              "n": "unit",
+              "r": false,
+              "sh": "Military unit or division",
+              "t": "`$STRING`"
             }
-          ],
+          },
           "id": {
             "field": "id",
             "name": "id"
@@ -100,18 +174,19 @@
               "name": "list",
               "points": [
                 {
-                  "active": true,
-                  "args": {},
-                  "contract": {
+                  "a": true,
+                  "co": {
                     "id": "GET /api/criminals",
-                    "json": "{\"operationId\":\"getCriminalsList\",\"parameters\":[],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"items\":{\"description\":\"Information about an officer who has committed crimes\",\"properties\":{\"crimes\":{\"description\":\"List of crimes committed\",\"items\":{\"type\":\"string\"},\"type\":\"array\"},\"date\":{\"description\":\"Date of the incident or when the crime was reported\",\"format\":\"date\",\"type\":\"string\"},\"description\":{\"description\":\"Detailed description of the crimes and incidents\",\"type\":\"string\"},\"id\":{\"description\":\"Unique identifier for the criminal record\",\"type\":\"string\"},\"location\":{\"description\":\"Location where the crimes took place\",\"type\":\"string\"},\"name\":{\"description\":\"Name of the officer\",\"type\":\"string\"},\"rank\":{\"description\":\"Military rank of the officer\",\"type\":\"string\"},\"unit\":{\"description\":\"Military unit or division\",\"type\":\"string\"}},\"type\":\"object\"},\"type\":\"array\"}}},\"description\":\"Successful response with list of criminals\"},\"500\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"code\":{\"description\":\"Error code\",\"type\":\"integer\"},\"error\":{\"description\":\"Error message\",\"type\":\"string\"}},\"type\":\"object\"}}},\"description\":\"Internal server error\"}},\"securitySource\":\"unspecified\"}",
                     "source": "openapi3",
-                    "version": 1
+                    "version": 2
                   },
-                  "kind": "http",
-                  "method": "GET",
-                  "orig": "/api/criminals",
-                  "segments": [
+                  "g": {},
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/api/criminals",
+                  "q": {},
+                  "r": {},
+                  "s": [
                     {
                       "lit": "api"
                     },
@@ -119,8 +194,7 @@
                       "lit": "criminals"
                     }
                   ],
-                  "select": {},
-                  "transform": {
+                  "t": {
                     "req": "`reqdata`",
                     "res": "`body`"
                   }
@@ -549,13 +623,13 @@
           "param": {},
           "step": [
             {
-              "active": true,
-              "data": {},
-              "input": {},
-              "match": {},
-              "op": "list",
-              "spec": [],
-              "valid": [
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {},
+              "o": "list",
+              "s": [],
+              "v": [
                 {
                   "apply": "ItemExists",
                   "def": {

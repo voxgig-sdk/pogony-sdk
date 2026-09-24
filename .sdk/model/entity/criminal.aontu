@@ -1,0 +1,104 @@
+# Entity: criminal
+
+main: kit: entity: criminal: {
+
+  alias: field: {}
+
+  fields: {
+    crimes: {
+      h: "Crimes"
+      n: "crimes"
+      r: false
+      sh: "List of crimes committed"
+      t: "`$ARRAY`"
+    }
+    date: {
+      fo: "date"
+      h: "Date"
+      n: "date"
+      r: false
+      sh: "Date of the incident or when the crime was reported"
+      t: "`$STRING`"
+    }
+    description: {
+      h: "Description"
+      n: "description"
+      r: false
+      sh: "Detailed description of the crimes and incidents"
+      t: "`$STRING`"
+    }
+    id: {
+      h: "Id"
+      n: "id"
+      r: false
+      sh: "Unique identifier for the criminal record"
+      t: "`$STRING`"
+    }
+    location: {
+      h: "Location"
+      n: "location"
+      r: false
+      sh: "Location where the crimes took place"
+      t: "`$STRING`"
+    }
+    name: {
+      h: "Name"
+      n: "name"
+      r: false
+      sh: "Name of the officer"
+      t: "`$STRING`"
+    }
+    rank: {
+      h: "Rank"
+      n: "rank"
+      r: false
+      sh: "Military rank of the officer"
+      t: "`$STRING`"
+    }
+    unit: {
+      h: "Unit"
+      n: "unit"
+      r: false
+      sh: "Military unit or division"
+      t: "`$STRING`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "criminal"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /api/criminals"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/api/criminals"
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "criminals"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

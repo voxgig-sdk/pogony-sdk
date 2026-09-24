@@ -19,7 +19,6 @@ import type {
   CriminalListMatch,
 } from '../PogonyTypes'
 
-// TODO: needs Entity superclass
 class CriminalEntity extends PogonyEntityBase<Criminal> {
 
   constructor(client: PogonySDK, entopts: any) {

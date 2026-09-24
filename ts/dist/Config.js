@@ -11,19 +11,12 @@ const FEATURE_CLASS = {
     test: TestFeature_1.TestFeature,
     timeout: TimeoutFeature_1.TimeoutFeature,
 };
-// Per-feature plugin DEFINITIONS (voxgig/plugin `Definition` values), from
-// the model's active plugin groups. A feature that takes a `plugins` option
-// (secrets over sekreto) reads its own entry; a feature with no plugins has
-// none. Named imports above make each definition statically reachable, so
-// an SDK carries exactly the plugin modules its model selects — the same
-// leanness the old side-effect registry imports bought, without a registry.
 const FEATURE_PLUGINS = {};
 exports.FEATURE_PLUGINS = FEATURE_PLUGINS;
 class Config {
     makeFeature(fn) {
         const fc = FEATURE_CLASS[fn];
         const fi = new fc();
-        // TODO: errors etc
         return fi;
     }
     // False for a feature added at runtime via options.extend (station's
@@ -114,44 +107,52 @@ class Config {
             "fields": [
                 {
                     "name": "crimes",
-                    "short": "List of crimes committed",
-                    "type": "`$ARRAY`"
+                    "title": "Crimes",
+                    "type": "`$ARRAY`",
+                    "short": "List of crimes committed"
                 },
                 {
-                    "format": "date",
                     "name": "date",
+                    "title": "Date",
+                    "type": "`$STRING`",
                     "short": "Date of the incident or when the crime was reported",
-                    "type": "`$STRING`"
+                    "format": "date"
                 },
                 {
                     "name": "description",
-                    "short": "Detailed description of the crimes and incidents",
-                    "type": "`$STRING`"
+                    "title": "Description",
+                    "type": "`$STRING`",
+                    "short": "Detailed description of the crimes and incidents"
                 },
                 {
                     "name": "id",
-                    "short": "Unique identifier for the criminal record",
-                    "type": "`$STRING`"
+                    "title": "Id",
+                    "type": "`$STRING`",
+                    "short": "Unique identifier for the criminal record"
                 },
                 {
                     "name": "location",
-                    "short": "Location where the crimes took place",
-                    "type": "`$STRING`"
+                    "title": "Location",
+                    "type": "`$STRING`",
+                    "short": "Location where the crimes took place"
                 },
                 {
                     "name": "name",
-                    "short": "Name of the officer",
-                    "type": "`$STRING`"
+                    "title": "Name",
+                    "type": "`$STRING`",
+                    "short": "Name of the officer"
                 },
                 {
                     "name": "rank",
-                    "short": "Military rank of the officer",
-                    "type": "`$STRING`"
+                    "title": "Rank",
+                    "type": "`$STRING`",
+                    "short": "Military rank of the officer"
                 },
                 {
                     "name": "unit",
-                    "short": "Military unit or division",
-                    "type": "`$STRING`"
+                    "title": "Unit",
+                    "type": "`$STRING`",
+                    "short": "Military unit or division"
                 }
             ],
             "id": {
@@ -165,7 +166,6 @@ class Config {
                     "name": "list",
                     "points": [
                         {
-                            "args": {},
                             "kind": "http",
                             "method": "GET",
                             "orig": "/api/criminals",
@@ -177,15 +177,17 @@ class Config {
                                     "lit": "criminals"
                                 }
                             ],
-                            "select": {},
+                            "parts": [
+                                "api",
+                                "criminals"
+                            ],
+                            "rename": {},
                             "transform": {
                                 "req": "`reqdata`",
                                 "res": "`body`"
                             },
-                            "parts": [
-                                "api",
-                                "criminals"
-                            ]
+                            "args": {},
+                            "select": {}
                         }
                     ]
                 }

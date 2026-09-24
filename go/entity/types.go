@@ -1,7 +1,7 @@
 // Typed models for the Pogony SDK.
 //
-// GENERATED from the API model: main.kit.entity.<e>.fields[] and per-op
-// params (op.<name>.points[].args.params[]). Field/param types come from the
+// GENERATED from the API model: main.kit.entity.<e>.fields{} and per-op
+// params (op.<name>.points[].g.params[]). Field/param types come from the
 // canonical type sentinels via @voxgig/sdkgen canonToType (source of truth:
 // @voxgig/apidef VALID_CANON). Do not edit by hand.
 package entity
@@ -14,14 +14,6 @@ import (
 
 // Criminal is the typed data model for the criminal entity.
 type Criminal struct {
-	Crimes *[]any `json:"crimes,omitempty"`
-	Date *string `json:"date,omitempty"`
-	Description *string `json:"description,omitempty"`
-	Id *string `json:"id,omitempty"`
-	Location *string `json:"location,omitempty"`
-	Name *string `json:"name,omitempty"`
-	Rank *string `json:"rank,omitempty"`
-	Unit *string `json:"unit,omitempty"`
 }
 
 // CriminalListMatch is the typed request payload for Criminal.ListTyped.

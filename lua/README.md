@@ -43,7 +43,7 @@ local criminals, err = client:Criminal():list()
 if err then error(err) end
 
 for _, item in ipairs(criminals) do
-  print(item["id"], item["date"])
+  print(item["id"])
 end
 ```
 

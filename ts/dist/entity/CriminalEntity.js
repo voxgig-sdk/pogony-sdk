@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CriminalEntity = void 0;
 const PogonyEntityBase_1 = require("../PogonyEntityBase");
-// TODO: needs Entity superclass
 class CriminalEntity extends PogonyEntityBase_1.PogonyEntityBase {
     constructor(client, entopts) {
         super(client, entopts);
